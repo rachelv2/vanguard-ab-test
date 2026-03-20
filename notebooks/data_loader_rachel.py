@@ -28,3 +28,15 @@ def load_data(base_path="data/raw/"):
     print(f"Experiment: {df_experiment.shape}")
     
     return df_demo, df_web, df_experiment
+
+    
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import polars as pl
+import yaml
+
+"""
+Loads and prepares all libraries.
+
+"""
