@@ -6,4 +6,5 @@ input_data:
 
 output_data:
   file5: "../data/clean/df_main.csv"
-  file6: "../data/clean/df_visit_window.csv"
+  
+  file7: "../data/clean/df_visit_window.csv"
