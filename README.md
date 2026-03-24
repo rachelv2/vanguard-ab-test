@@ -164,9 +164,7 @@ Targeted improvements on specific bottlenecks will likely deliver higher returns
 
 ## Visualisations
 
-# Visualizations
-
-Visual analysis was performed using a combination of Python, Prezi, and Tableau to provide both static and interactive insights.
+Visual analysis was performed using a combination of Python, Prezi, and Tableau to provide both static and interactive insights. Please refer to Resources section.
 
 ## Python (libraries)
 - **pandas** – data manipulation and aggregation  
