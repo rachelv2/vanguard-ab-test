@@ -196,7 +196,8 @@ This multi-tool approach ensures both detailed statistical insight and accessibl
 
 - [Prezi Presentation](https://prezi.com/view/18jwHtv1pSUOdVmcTZPs/?referral_token=VzXuWplnB3FN)  
 - [Trello Board](https://trello.com/b/RIDNYtka/vanguard-ab-test)  
-- [Miro Board](https://miro.com/app/board/uXjVG4NbT5U=/)  
+- [Miro Board](https://miro.com/app/board/uXjVG4NbT5U=/)
+- [Miro Board] (https://public.tableau.com/shared/SG3BSNRSS?:display_count=n&:origin=viz_share_link)
 
 ## Additional sources
 - [UX KPI Indicators Article](https://lagrandeourse.design/blog/actualites/6-indicateurs-defficacite-ux-a-integrer-a-vos-kpi-marketing/)  
