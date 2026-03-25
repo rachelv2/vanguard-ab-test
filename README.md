@@ -79,7 +79,23 @@ Measures the average duration per step and per group to evaluate efficiency and 
 ---
 
 ## KPI 3: Error rate  
-(To be completed)
+
+### Visit Classification
+Each of the visits was classified into one of four types:
+
+| Type | Definition |
+|---|---|
+| **Smooth** | All 5 steps completed in correct order, zero errors |
+| **Lumpy – Repetition** | Completed, but re-visited a step |
+| **Lumpy – Regression** | Completed, but navigated backwards |
+| **Incomplete** | Never reached `confirm` |
+
+### Error Detection
+Errors were flagged by comparing each step to the previous one within the same visit:
+- **Repetition**: the same step appears consecutively (e.g., step_2 → step_2)
+- **Regression**: the step rank decreases (e.g., step_2 → step_1)
+
+A visit was marked as having an error if at least one repetition or regression occurred during that visit.
 
 ---
 
@@ -152,7 +168,47 @@ Targeted improvements on specific bottlenecks will likely deliver higher returns
 
 # Results – KPI 3
 
-(To be completed)
+### Error Rates by Step
+The `start` step was the most error-prone in both groups:
+
+| Group | Step | Error Rate |
+|---|---|---|
+| Control | start | 8.68% |
+| Control | step_2 | 2.64% |
+| Control | step_1 | 2.35% |
+| Control | step_3 | 0.69% |
+| Control | confirm | 0.56% |
+| **Test** | **start** | **12.45%** |
+| Test | step_1 | 2.81% |
+| Test | confirm | 2.19% |
+| Test | step_2 | 1.66% |
+| Test | step_3 | 0.51% |
+
+The Test group had a notably higher error rate at `start` (12.45% vs 8.68%) and at `confirm` (2.19% vs 0.56%).
+
+*Note: error rate here = number of erroneous step transitions at that step / total rows in that group.*
+
+### Buggiest Transitions
+The most common single error in both groups was `start → start` (the user repeated the start page):
+- **Control**: 6,118 occurrences (6.08% error rate)
+- **Test**: 9,184 occurrences (6.59% error rate)
+
+Other notable high-error transitions in the Test group:
+- `step_1 → start`: 4,878 errors (3.5%)
+- `confirm → confirm`: 3,058 errors (2.19%)
+- `step_2 → step_1`: 2,342 errors (1.68%)
+
+### Error Rate by Age Group
+The error rate here means: the percentage of visits by that age group that contained at least one navigation error (repetition or regression).
+
+| Age Group | Control | Test |
+|---|---|---|
+| <30 | 34.14% | 40.31% |
+| 30–50 | 31.36% | 40.26% |
+| 50–70 | 35.33% | 47.85% |
+| 70+ | 35.36% | 48.89% |
+
+The Test group had higher error rates across all age groups. Users aged 50–70 and 70+ were the most affected — in the Test group, nearly 1 in 2 of their visits contained at least one navigation error. This suggests the new UI may present more friction for older users.
 
 # General conclusion
 
