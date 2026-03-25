@@ -66,7 +66,7 @@ Completion rate measures the percentage of users who successfully complete a tas
 - Step completion = users who complete a step / users who started it  
 - Process completion = users who complete all steps without errors / users who started  
 
-A full process includes: start → step1 → step2 → step3 → confirm  
+A full process includes this exclusive sequence: start → step1 → step2 → step3 → confirm  
 
 **Benchmark:** 75–80%  
 **Target improvement:** +5% for Test group  
