@@ -2,7 +2,7 @@
 
 ## Project Structure
 
-.
+```
 ├── config.yaml                # Project configuration settings
 ├── main.py                    # Main script to run project workflows
 ├── pyproject.toml             # Project dependencies and configuration
@@ -42,6 +42,8 @@
 │   ├── KPI-duration_rachel.ipynb
 │   ├── main_dataset_tasks_anne.ipynb
 │   └── functions.py
+
+```
 
 ## Project Overview
 This project analyzes a digital experiment conducted by Vanguard to improve its online user journey. A redesigned interface and in-context prompts were introduced to make the process more intuitive and increase completion rates. The main goal is to assess whether these changes lead to higher user engagement and more completed processes.
