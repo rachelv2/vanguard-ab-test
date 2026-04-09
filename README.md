@@ -1,4 +1,12 @@
-# Vanguard A/B Test: Optimizing Digital Engagement
+# Vanguard A/B Test: Analyzing UI Changes for Enhanced Client Conversion
+
+## Executive Summary
+
+This project evaluates the business impact of a redesigned digital client experience through an A/B test conducted by Vanguard Group. By comparing user behavior between the existing platform and the new interface, the analysis measures performance across key metrics including conversion, process completion time, and user drop-off.
+
+The study goes beyond performance tracking to identify where the redesigned experience improves usability and where friction persists. Segment-level analysis reveals how different client groups respond to the new interface, providing a more nuanced understanding of customer behavior.
+
+The project delivers data-driven recommendations to support product and business stakeholders in deciding whether to scale the new experience, refine specific journey steps, or maintain the current design, with the goal of improving both customer experience and operational efficiency.
 
 ## Project Structure
 
